@@ -1,0 +1,14 @@
+management:
+    endpoints:
+        enabled-by-default: true
+        web:
+            exposure:
+                include: '*'
+server:
+    port: 8090
+spring:
+    security:
+        oauth2:
+            resourceserver:
+                jwt:
+                    issuer-uri: http://auth-server:9000
